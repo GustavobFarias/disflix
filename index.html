@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disflix</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(32, 31, 31);
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 64px 0;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+
+        }
+
+        .card img {
+            height: 54vh;
+        }
+
+        .card {
+            margin-bottom: 4rem;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all ease-in-out 0.5s;
+        }
+
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .card-img-overlay {
+             opacity: 0;
+        }
+
+        .card-img-overlay:hover {
+            transition: all ease-in-out 0.5s;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 1;
+        }
+
+        .card-img-overlay button {
+            
+            width: 200px;  
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="slides" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="img/friends.webp" alt="Logo de Friends">
+                    <div class="carousel-caption">
+                        <h2>Em Destaque</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="img/Diarios-de-um-Vampiro.webp" alt="logo de Diário de um vampiro">
+                    <div class="carousel-caption">
+                        <h2>Em Destaque</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="img/outer-banks.jpg" alt="logo de outer banks">
+                    <div class="carousel-caption">
+                        <h2>Em Destaque</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#slides" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#slides" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button data-bs-target="#slides" data-bs-slide-to="0" class="active" type="button"></button>
+                <button data-bs-target="#slides" data-bs-slide-to="1" type="button"></button>
+                <button data-bs-target="#slides" data-bs-slide-to="2" type="button"></button>
+            </div>
+        </div>
+        <h1>Filmes</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/friendss.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h3>friendss</h3>
+                            <p>
+                                Friends é uma sitcom americana que estreou em 1994 e durou até 2004. Criada por David Crane e Marta Kauffman, a série segue seis amigos – Rachel, Monica, Ross, Chandler, Joey e Phoebe – enquanto navegam pela vida em Nova York. Conhecida por seu humor envolvente e momentos emocionantes, Friends se tornou um fenômeno cultural e continua a conquistar fãs através de serviços de streaming, sendo um símbolo duradouro da televisão dos anos 90 e 2000.
+                            </p>
+                                <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/diario.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <p>
+                                Diário de um Vampiro é uma série de televisão baseada nos livros de L.J. Smith, que foi ao ar de 2009 a 2017. A trama segue Elena Gilbert, uma adolescente que se envolve com dois irmãos vampiros, Stefan e Damon Salvatore. Ambientada na fictícia cidade de Mystic Falls, a série mistura romance, mistério e elementos sobrenaturais, explorando temas de amor, sacrifício e redenção. Com sua trama envolvente e personagens cativantes, Diário de um Vampiro se tornou um sucesso mundial e um marco na cultura pop.
+                            </p>
+                            <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/outer.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <p>
+                                Outer Banks é uma série de aventura e mistério da Netflix que estreou em 2020. A trama segue um grupo de adolescentes, conhecidos como Pogues, liderados por John B, que buscam um lendário tesouro na costa da Carolina do Norte. Enquanto enfrentam rivais, forças da lei e desafios pessoais, os Pogues descobrem segredos que mudam suas vidas para sempre. Com uma mistura de ação, drama e romance, Outer Banks conquistou uma base de fãs devotos e se destaca por suas reviravoltas emocionantes e paisagens deslumbrantes.
+                            </p>
+                            <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/karate.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <p>
+                                Karatê Kid é um clássico filme de artes marciais de 1984 que conta a história de Daniel LaRusso, um adolescente que aprende karatê com o Sr. Miyagi para se defender de valentões e competir em um torneio. Sob a orientação de Miyagi, Daniel não só domina as técnicas de luta, mas também aprende importantes lições de vida sobre honra, perseverança e respeito. Com suas cenas icônicas e mensagens inspiradoras, Karatê Kid se tornou um marco cultural e uma história atemporal de superação e amizade.
+                            </p>
+                            <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/7-vidas.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <p>
+                                Sete Vidas de um Cachorro é um comovente filme de 2017 que segue a jornada de um cão chamado Bailey, que reencarna várias vezes ao longo de cinco décadas. Cada nova vida traz uma nova raça, novos donos e novas lições, mas o espírito e a alma de Bailey permanecem constantes. O filme explora temas de amor, lealdade e propósito, mostrando como os cães tocam e transformam as vidas das pessoas ao seu redor. Com uma narrativa tocante e momentos emocionantes, Sete Vidas de um Cachorro celebra a profunda conexão entre humanos e seus companheiros caninos.
+                            </p>
+                            <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card text-bg-dark">
+                        <img src="img/para-todo-os-garoto.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <p>
+                                Para Todos os Garotos que Já Amei é um filme de comédia romântica de 2018 baseado no livro de Jenny Han. A história segue Lara Jean Covey, uma adolescente cujas cartas de amor secretas são enviadas acidentalmente para seus antigos crushes. Isso leva a uma série de eventos inesperados, incluindo um romance falso com Peter Kavinsky, que acaba se transformando em algo real. Com uma narrativa charmosa e personagens cativantes, Para Todos os Garotos que Já Amei explora temas de amor, identidade e crescimento, tornando-se um sucesso entre jovens e adultos.
+                            </p>
+                            <button class="btn btn-primary" type="button">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
